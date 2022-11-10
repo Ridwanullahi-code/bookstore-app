@@ -1,75 +1,85 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+## **Project Demo**
+[Live Demo](https://react-math-magicians-app.netlify.app/)
 
-# Project Name
+## **Description**
+**Math magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, read a random math-related quote.Built this application with react
 
-> Description the project.
-
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+## **Project Goals:**
+- Use JavaScript Best pratice
+- Understand the using of [HTML & CSS best practices](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/html_css_best_practices.md)
+- Use GitHub flow
+- Use [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/gitflow.md).
+- Setup project with [React](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/lessons/what_is_react.md)
+- Understand how to use medium-fidelity [wireframes](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/sneak_peek.md) to create a UI
 
 
-## Getting Started
+## **Prerequisites:**
+- Basic Knowledge of HTML & CSS
+- Basic Knowledge of [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) & [ES6](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/lessons/lesson_es6-what_is_it_about.md) syntax
+- Basic Knowledge of [React Setup](https://reactjs.org/docs/getting-started.html) setup
+- [Jest](https://jestjs.io/docs/getting-started) and [React Testing Library ](https://testing-library.com/docs/react-testing-library/example-intro)
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## **Build With:**
 
+- HTML
+- CSS
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React]((https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/lessons/webpack_v1_1.md))
 
-To get a local copy up and running follow these simple example steps.
+## **SETUP**
 
-### Prerequisites
+To make use of this project, kindly run any of the following commands.
 
-### Setup
+```
+git clone https://github.com/Ridwanullahi-code/math-magicians.git
+```
 
-### Install
+or
 
-### Usage
+```
+git clone git@github.com:Ridwanullahi-code/math-magicians.git
+```
+## **INSTALL**
+```
+npm install
+```
+```
+npm install --save-dev @testing-library/dom
+```
+## **Run On Server**
+To run the project on server, run below command
 
-### Run tests
+```
+npm start
+```
+## **Run Test**
+To test run the project
 
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
+```
+npm run test
+```
+## **Show your support**
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## **Authors**
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Github: [Ridwan](https://github.com/Ridwanullahi-code)
+- LinkedIn: [Ridwan](https://www.linkedin.com/in/ajayi-ridwan-2a1515199/)
 
-## 📝 License
+## 🚀 **About Me**
 
-This project is [MIT](./LICENSE) licensed.
+I'm full stack software developer, Computer science, and Microverse student.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+**Stack:** Python, JavaScript, Bootstrap, Ruby, Rails, React, Redux. Available for hire!
+## 🤝 **Contributing**
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Ridwanullahi-code/math-magicians/issues/)
+## **Acknowledgements**
+
+- [Microverse](https://www.microverse.org/)
+
+## **License**
+
+This project is [MIT](https://choosealicense.com/licenses/mit/LICENSE) licensed.
