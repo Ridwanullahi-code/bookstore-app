@@ -1,4 +1,3 @@
-/* eslint-disable */
 import PropTypes from 'prop-types';
 import Button from './Button';
 
@@ -16,7 +15,7 @@ function Book(props) {
   );
 }
 // props validation
-Book.PropTypes = {
+Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };
