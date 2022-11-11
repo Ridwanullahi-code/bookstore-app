@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: azure;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.nav-container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height:80px;
+    padding: 4px 60px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.navbar, .nav-items{
+    display: flex;
+    gap:40px;
+    align-items: center;
+}
+.web-logo{
+    color:rgb(2, 144, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-link{
+    color: grey;
+    cursor: pointer;
+    font-size: 13px;
+}
+.active{
+    color:black;
+}
+.nav-link:hover{
+    color:rgb(2, 144, 255);
+}
+.nav-link:active{
+    color: rgb(1, 39, 68);
+}
+.user{
+    color:rgb(2, 144, 255);
+    font-size: 22px;
+    cursor: pointer;
+}
+.remove-btn{
+    border:none;
+    color:rgb(2, 144, 255);
+    background-color: transparent;
+}
+.fa-spinner-third{
+    color:blue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.books-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    width: 90%;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height:140px;
+    margin: 0 auto;
+}
+
+.update-btn{
+    color:rgb(2, 144, 255);
+    border: 1px solid rgb(2, 144, 255);
+    padding: 5px 15px;
+    background-color: rgb(2, 144, 255);
+    color: rgba(255, 255, 255, 0.789);
+    border-radius: 3px;
+    font-size: 11px;
+}
+.chapter-container{
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
