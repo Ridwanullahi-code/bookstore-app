@@ -14,7 +14,7 @@ function Book(props) {
     </div>
   );
 }
-// props validation
+// props validation should be proTypes
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
