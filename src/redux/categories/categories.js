@@ -5,18 +5,18 @@ const initState = {
   categories: [],
 };
 // Actions Creators
-export function addCategories() {
+export function checkBookStatus() {
   return {
     type: types.CHECKED_BOOK_STATUS,
   };
 }
 
-const CategoriesReducer = (action, state = initState) => {
-  switch (action.types) {
+const CategoriesReducer = (state = initState, action) => {
+  switch (action.type) {
     case types.CHECKED_BOOK_STATUS:
       return {
         ...state,
-        categories: [...state, 'Under Construction'],
+        categories: [...state.categories, 'Under Construction'],
       };
     default:
       return state;
