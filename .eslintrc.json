@@ -21,7 +21,8 @@
     "no-shadow": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "react/self-closing-comp":"off",
-    "default-param-last": "off"
+    "default-param-last": "off",
+    "no-param-reassign": 0
   },
   "ignorePatterns": [
     "dist/",

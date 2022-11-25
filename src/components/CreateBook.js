@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { addBook } from '../redux/features/bookSlicer';
 import Input from './Input';
 
 function CreateBook() {
-  const [state, setState] = useState({ id: '', title: '', author: '' });
+  const [state, setState] = useState({
+    item_id: '', title: '', author: '', category: '',
+  });
   // function to store user inputs
-  const id = useSelector((state) => state.books).noOfBooks;
+  const id = useSelector((state) => state.books);
   const onChange = (e) => {
-    setState({ ...state, id: id + 1, [e.target.name]: e.target.value });
+    setState({
+      ...state, item_id: id + 1, [e.target.name]: e.target.value, category: 'Action packed',
+    });
   };
   // function to dispatch action
   const dispatch = useDispatch();
@@ -16,7 +20,9 @@ function CreateBook() {
   const handler = (e) => {
     e.preventDefault();
     dispatch(addBook(state));
-    setState({ id: '', title: '', author: '' });
+    setState({
+      item_id: '', title: '', author: '', category: 'Action packed',
+    });
   };
 
   return (

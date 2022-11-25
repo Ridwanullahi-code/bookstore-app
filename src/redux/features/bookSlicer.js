@@ -1,43 +1,65 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+/* eslint-disable no-param-reassign */
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-//https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/
-// base url
-const baseUrl = "https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi";
+
+const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
 const url = `${baseUrl}/apps/FIAzQhOtaqG2b6MuYF53/books`;
 
-const initState = {
+const initialState = {
   books: [],
-  loading:false,
-}
+  loading: false,
+};
 
 export const getBooks = createAsyncThunk(
   // action type string
   'books/getBooks',
-  //callback function
+  // callback function
   async () => {
-       const response = await axios.get(url);
-       return response.data;
-    //  catch (error) {
-    //   thunkAPI.rejectWithValue(error.res.data);
-    // }
-  }
-); 
+    const response = await axios.get(url);
+    const { data } = response;
+    const books = Object.entries(data).map(([key, value]) => {
+      const { title, category, author } = value[0];
+      return {
+        itemId: key,
+        title,
+        category,
+        author,
+      };
+    });
+    return books;
+  },
+);
 
+export const addBook = createAsyncThunk(
+  'book/addBook',
+  async (payload, thunkAPI) => {
+    await axios.post(url, payload);
+    return thunkAPI.dispatch(getBooks());
+  },
+);
+
+export const deleteBook = createAsyncThunk(
+  'book/deleteBook',
+  async (id, thunkAPI) => {
+    await axios.delete(`${url}/${id}`);
+    return thunkAPI.dispatch(getBooks());
+  },
+);
 const bookSlice = createSlice({
-  name: "books",
-  initState,
+  name: 'books',
+  initialState,
   reducers: {},
   extraReducers: {
     [getBooks.pending]: (state) => {
       state.loading = true;
     },
-    [getBooks.fulfilled]: (state,action) => {
+    [getBooks.fulfilled]: (state, action) => {
       state.loading = false;
       state.books = action.payload;
     },
-    // [fetch.rejected]: (state) => {
-    //   state.loading = false;
-    // },
+    [fetch.rejected]: (state) => {
+      state.loading = false;
+    },
   },
 });
 
