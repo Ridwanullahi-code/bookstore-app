@@ -6,7 +6,7 @@ import Category from './pages/Category';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App Bookstore-CMS">
       <Navbar />
       <Routes>
         <Route path="/" element={<Books />} />
