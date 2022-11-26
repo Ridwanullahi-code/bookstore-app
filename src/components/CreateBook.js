@@ -26,22 +26,25 @@ function CreateBook() {
   };
 
   return (
-    <form onSubmit={handler}>
-      <Input
-        classes="book"
-        name="title"
-        holder="Enter Book Title"
-        required
-        change={onChange}
-      />
-      <Input
-        classes="book"
-        name="author"
-        holder="Enter Author Name"
-        required
-        change={onChange}
-      />
-      <input className="add-book" type="submit" value="Add Book" />
+    <form onSubmit={handler} className="add-section">
+      <h2 className="add-label">ADD NEW BOOK</h2>
+      <div className="form-input">
+        <Input
+          classes="book input"
+          name="title"
+          holder="Enter Book Title"
+          required
+          change={onChange}
+        />
+        <Input
+          classes="author input"
+          name="author"
+          holder="Enter Author Name"
+          required
+          change={onChange}
+        />
+        <input className="add-btn" type="submit" value="Add Book" />
+      </div>
     </form>
   );
 }

@@ -1,108 +1,221 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    width:100%;
-    height:100%;
-    background-color: #f4f5f9;
-    padding: 9.313em 3.75em 6.25em; 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto+Slab:wght@100;200;300;400&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family:
+    "Roboto",
+    Arial,
+    Helvetica,
+    sans-serif;
 }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f5f9;
+
+  /* padding: 9.313em 3.75em 6.25em;  */
+}
+
 .App {
-    width: 70rem;
-    background-color:white;
-    border: 1px solid grey;
-}
-/* .nav-container{
-    padding: 9.313rem 3.75rem 7.688rem 6.25rem;
-} */
-/* .panel-bg {
-    width: 87.5rem;
-    height: 5.938rem;
-    margin: 0 0 2.375rem;
-    padding: 1.438rem 6.188rem 1.688rem 6.25rem;
-    background-color: #fff;
-}
-.Lesson-Panel {
-    width: 75rem;
-    height: 10.625rem;
-    margin: 0.938rem 0.063rem 2.5rem 0;
-    padding: 2rem 9.188rem 1.625rem 1.688rem;
-    border-radius: 4px;
-    border: solid 1px #e8e8e8;
-    background-color: #fff;
+  width: 95vw;
+  height: 100vh;
+  background-color: white;
+  margin: 4em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.Suzanne-Collins {
-    width: 6.688rem;
-    height: 1.188rem;
-    margin: 0.25rem 0 0;
-    font-family: RobotoSlab;
-    font-size: 0.875rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #4386bf;
+.nav-container {
+  display: flex;
+  max-width: 95vw;
+  padding: 20px 6em;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.938rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
-.Current-Chapter {
-    width: 7.875rem;
-    height: 1.125rem;
-    margin: 0.063rem 3.625rem 0 3.688rem;
-    opacity: 0.5;
-    font-family: RobotoSlab;
-    font-size: 0.813rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black-two);
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.shadow {
-    width: 85.063rem;
-    height: 63.313rem;
-    margin: 9.313rem 0 0 4.938rem;
-    padding: 10.563rem 8.688rem 20.625rem 1.313rem;
-    opacity: 0.2;
-    border-radius: 4px;
-    -webkit-filter: blur(50px);
-    filter: blur(50px);
-    background-color: #000;
+
+.navbar {
+  display: flex;
+  gap: 20px;
 }
-.chapter-no{
-    width: 5.625rem;
-    height: 1.313rem;
-    margin: 0.438rem 5.875rem 0.25rem 3.688rem;
-    font-family: RobotoSlab;
-    font-size: 1rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    color: var(--black-two);
+
+.user {
+  color: rgb(2, 144, 255);
+  cursor: pointer;
 }
-.add-book {
-    width: 11.5rem;
-    height: 2.063rem;
-    margin: 0.75rem 0 0.563rem 3.688rem;
-    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-    border-radius: 3px;
-    background-color: var(--azure);
+
+.web-logo {
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgb(2, 144, 255);
 }
-.Title {
-    width: 4.75rem;
-    height: 1.188rem;
-    font-family: Montserrat;
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.15px;
-    color: var(--very-light-pink);
-} */
+
+.nav-link {
+  color: grey;
+}
+
+.nav-link.active {
+  color: black;
+}
+
+.nav-link:hover {
+  color: rgb(2, 144, 255);
+}
+
+.nav-link:active {
+  color: rgb(3, 31, 51);
+}
+
+.Bookstore-CMS {
+  background-color: white;
+  height: 85vh;
+  width: 95vw;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inner-container {
+  width: 80vw;
+  display: flex;
+  margin: auto;
+  padding: 20px 100px 20px 15px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.book-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.author {
+  color: rgb(136, 173, 205);
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  background-color: transparent;
+  color: rgb(136, 173, 205);
+  border: none;
+}
+
+.Oval-2 {
+  width: 4rem;
+  height: 4rem;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 4rem;
+  color: #307bbe;
+  border: solid 5px #307bbe;
+}
+
+.percentage-status {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.percentage {
+  font-size: 37px;
+  font-weight: lighter;
+  color: #000;
+}
+
+.status {
+  color: rgb(148, 147, 148);
+}
+
+.current-chapter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.add-section {
+  width: 80vw;
+  margin: 30px auto;
+}
+
+.form-input {
+  display: flex;
+  gap: 20px;
+}
+
+.add-label {
+  color: rgb(148, 147, 148);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 660px;
+  padding: 0.5em 2em;
+}
+
+.add-btn {
+  background-color: rgb(2, 144, 255);
+  width: 300px;
+  color: white;
+  border: 1px solid rgb(2, 144, 255);
+}
+
+.add-btn:hover {
+  opacity: 0.8;
+}
+
+.add-btn:active {
+  background-color: rgb(2, 40, 68);
+}
+
+.update-btn {
+  background-color: rgb(2, 144, 255);
+  padding: 8px;
+  color: white;
+  border: 1px solid rgb(2, 144, 255);
+}
+
+.chapter-title {
+  color: rgb(148, 147, 148);
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+}

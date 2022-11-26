@@ -2,7 +2,7 @@
 [Live Demo](https://react-math-magicians-app.netlify.app/)
 
 ## **Description**
-**Math magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, read a random math-related quote.Built this application with react
+**Math magicians** is a website that allow user to check different book and able to add books to the list.Built this application with react and redux
 
 ## **Project Goals:**
 - Use JavaScript Best pratice
@@ -25,6 +25,7 @@
 - CSS
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [React]((https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/lessons/webpack_v1_1.md))
+
 
 ## **SETUP**
 

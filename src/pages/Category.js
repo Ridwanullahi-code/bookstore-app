@@ -12,7 +12,7 @@ function Category() {
   };
 
   return (
-    <div>
+    <div className="category">
       <h1>categories!</h1>
       <h2>{selectedCategories.categories[0]}</h2>
       <Button btnType="button" value="Check Status" click={handleClick} />

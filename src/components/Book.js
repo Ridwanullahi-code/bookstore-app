@@ -17,16 +17,30 @@ function Book(props) {
   };
   return (
     <div className="book-container">
-      <div>
-        <p className='Suzanne-Collins'>{category}</p>
-        <h2>{title}</h2>
-        <p>{author}</p>
-        <Button
-          btnType="button"
-          classes="remove-btn"
-          value="remove"
-          click={handleRemove}
-        />
+      <div className="book-info">
+        <p className="category">{category}</p>
+        <h2 className="book">{title}</h2>
+        <p className="author">{author}</p>
+        <div className="button-container">
+          <Button
+            btnType="button"
+            classes="comment-btn btn"
+            value="comment"
+            click={null}
+          />
+          <Button
+            btnType="button"
+            classes="remove-btn btn"
+            value="remove"
+            click={handleRemove}
+          />
+          <Button
+            btnType="button"
+            classes="edit-btn btn"
+            value="Edit"
+            click={null}
+          />
+        </div>
       </div>
     </div>
   );
