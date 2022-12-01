@@ -1,9 +1,8 @@
-/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
-const url = `${baseUrl}/apps/FIAzQhOtaqG2b6MuYF53/books`;
+const url = `${baseUrl}/apps/4Bo0zmtiW09CQVkp6DCK/books`;
 
 const initialState = {
   books: [],
@@ -49,17 +48,15 @@ const bookSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {},
-  extraReducers: {
-    [getBooks.pending]: (state) => {
-      state.loading = true;
-    },
-    [getBooks.fulfilled]: (state, action) => {
-      state.loading = false;
-      state.books = action.payload;
-    },
-    [fetch.rejected]: (state) => {
-      state.loading = false;
-    },
+  extraReducers(builder) {
+    builder
+      .addCase(getBooks.pending, (state) => ({ ...state, loading: false }))
+      .addCase(getBooks.rejected, (state) => ({ ...state, loading: true }))
+      .addCase(getBooks.fulfilled, (state, { payload }) => ({
+        ...state,
+        books: payload,
+        loading: false,
+      }));
   },
 });
 

@@ -18,9 +18,9 @@ function Book(props) {
   return (
     <div className="book-container">
       <div className="book-info">
-        <p className="category">{category}</p>
+        <p className="book-category">{category}</p>
         <h2 className="book">{title}</h2>
-        <p className="author">{author}</p>
+        <p className="book-author">{author}</p>
         <div className="button-container">
           <Button
             btnType="button"

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { nanoid } from '@reduxjs/toolkit';
 import { addBook } from '../redux/features/bookSlicer';
 import Input from './Input';
 
@@ -8,10 +9,9 @@ function CreateBook() {
     item_id: '', title: '', author: '', category: '',
   });
   // function to store user inputs
-  const id = useSelector((state) => state.books);
   const onChange = (e) => {
     setState({
-      ...state, item_id: id + 1, [e.target.name]: e.target.value, category: 'Action packed',
+      ...state, item_id: nanoid(), [e.target.name]: e.target.value, category: 'Action packed',
     });
   };
   // function to dispatch action

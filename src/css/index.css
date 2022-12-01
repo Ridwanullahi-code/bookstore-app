@@ -17,8 +17,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #f4f5f9;
-
-  /* padding: 9.313em 3.75em 6.25em;  */
 }
 
 .App {
@@ -114,7 +112,7 @@ body {
   gap: 10px;
 }
 
-.author {
+.book-author {
   color: rgb(136, 173, 205);
 }
 
@@ -127,6 +125,7 @@ body {
   background-color: transparent;
   color: rgb(136, 173, 205);
   border: none;
+  cursor: pointer;
 }
 
 .Oval-2 {
