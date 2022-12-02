@@ -2,7 +2,7 @@
 [Live Demo](https://react-bookstore-app1.netlify.app/)
 
 ## **Description**
-**Math magicians** is a website that allow user to check different book and able to add books to the list.Built this application with react and redux
+**Bookstore** A single-page application that allows you to display a list of added books, add a new book,s and remove a book built using React, Redux, and CSS.
 
 ## **Project Goals:**
 - Use JavaScript Best pratice
@@ -32,13 +32,13 @@
 To make use of this project, kindly run any of the following commands.
 
 ```
-git clone https://github.com/Ridwanullahi-code/math-magicians.git
+git clone https://github.com/Ridwanullahi-code/bookstore-app.git
 ```
 
 or
 
 ```
-git clone git@github.com:Ridwanullahi-code/math-magicians.git
+git clone git@github.com:Ridwanullahi-code/bookstore-app.git
 ```
 ## **INSTALL**
 ```
@@ -66,7 +66,7 @@ Give a ⭐️ if you like this project!
 ## **Authors**
 
 - Github: [Ridwan](https://github.com/Ridwanullahi-code)
-- LinkedIn: [Ridwan](https://www.linkedin.com/in/ajayi-ridwan-2a1515199/)
+- LinkedIn: [Ridwan](https://www.linkedin.com/in/ajayi-ridwan/)
 
 ## 🚀 **About Me**
 
@@ -76,7 +76,7 @@ I'm full stack software developer, Computer science, and Microverse student.
 ## 🤝 **Contributing**
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Ridwanullahi-code/math-magicians/issues/)
+Feel free to check the [issues page](https://github.com/Ridwanullahi-code/bookstore-app/issues/)
 ## **Acknowledgements**
 
 - [Microverse](https://www.microverse.org/)
