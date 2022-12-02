@@ -1,5 +1,5 @@
 ## **Project Demo**
-[Live Demo](https://react-math-magicians-app.netlify.app/)
+[Live Demo](https://react-bookstore-app1.netlify.app/)
 
 ## **Description**
 **Math magicians** is a website that allow user to check different book and able to add books to the list.Built this application with react and redux
